@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loading.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+</head>
+
+<!-- annimation -->
+<body>
+  <div class="section"></div>
+  <div class="wrapper">
+  <div class="counter-up">
+    <div class="content">
+      <div class="box">
+        <div class="icon"><i class="fas fa-history"></i></div>
+        <div class="counter">724</div>
+        <div class="text">Savings</div>
+      </div>
+      <div class="box">
+        <div class="icon"><i class="fas fa-gift"></i></div>
+        <div class="counter">508,930</div>
+        <div class="text">withdraws</div>
+      </div>
+      <div class="box">
+        <div class="icon"><i class="fas fa-users"></i></div>
+        <div class="counter">36,000</div>
+        <div class="text">investment</div>
+      </div>
+      <div class="box">
+        <div class="icon"><i class="fas fa-award"></i></div>
+        <div class="counter">58,485</div>
+        <div class="text">profit</div>
+      </div>
+    </div>
+  </div>
+<!-------------counter--------->
+  <script>
+  $(document).ready(function(){
+    $('.counter').counterUp({
+      delay: 10,
+      time: 12000
+    });
+  });
+  </script>
+</body>
+</html>
