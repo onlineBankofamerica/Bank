@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
-
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-
     <link href='https://yesicon.app/bx' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
   </head>
 <body>
 
@@ -28,7 +28,6 @@
 </div>
 
 
-</div>
 <!-----------loginforum--------->
 <div class="loginforum">
   <div class="small-container"></div>
@@ -36,10 +35,11 @@
       <div class="col-7">
         <i class="fa fa-quote-left"></i>
         <p>TRANSFER</p>
+        <h3><div class="counter">9,609,397.80</div></h3>
         <div class="user_user">
           <input type="text" id="username" placeholder="Account Numbers">
-          <img src="./images/" id="username_img" alt="">
-          <input type="text" id="username" placeholder="Amount in Numbers">
+          <img src="./images/online-banking.png" id="username_img" alt="">
+          <input type="number" id="Number" placeholder="000,000,000.00">
 </div>
 
 <!-----------Select bank--------->
@@ -203,9 +203,9 @@
             <div class="container22">
               <button type="submit" class="btn55" onclick="openpopup1()"> SEND MONEY <i class="fa-regular fa-paper-plane"></i></button>
               <div class="popup1" id="popup1">
-                <img src="images/succesful.png">
-                <h2>Your Transfer Is<br> Confirmed!</h2>
-                <p>Thank You, your Payment have been succesfully Accepted</p>
+                <img src="images/not_successful.png">
+                <h2>Your Transfer Is<br> Pending!</h2>
+                <p>kindly, Deposit Minimum Of $600 Into Your Account To Get Your Transfer Successful</p>
                 <button type="button" onclick="closepopup1()">DONE</button>
               </div>
             </div> 
@@ -268,5 +268,19 @@
   }
 </script>
 <script src="script.js"></script>
+<div class="section"></div>
+<div class="wrapper">
+<div class="counter-up">
+  <div class="content">
+
+<!-------------counter--------->
+<script>
+$(document).ready(function(){
+  $('.counter').counterUp({
+    delay: 20,
+    time: 120000
+  });
+});
+</script>
 </body>
 </html>
