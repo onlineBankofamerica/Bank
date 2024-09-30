@@ -16,7 +16,7 @@ inputs.forEach((input, index)=>{
 inputs.forEach((input, index)=>{
   input.addEventListener('keyup', ()=>{
       const enteredvalue = Array.from(inputs).map(input => input.value).join('');
-      if(enteredvalue ==='220599'){
+      if(enteredvalue ==='tawanpa01060824'){
         window.location.href = 'DASHBOARD.html'
       }
   })
