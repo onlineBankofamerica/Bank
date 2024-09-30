@@ -225,7 +225,7 @@ small{
 .testimonial .col-3 img{
   width: 250px;
   margin-top: 20px;
-  border-radius: 50%;
+  border-radius: 0%;
 }
 .testimonial .col-3:hover{
   transform: translateY(-100px);
