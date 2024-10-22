@@ -22,7 +22,7 @@ inputs.forEach((input, index)=>{
   })
   input.addEventListener('keyup', ()=>{
     const enteredvalue = Array.from(inputs).map(input => input.value).join('');
-    if(enteredvalue ==='Kingfinny912134'){
+    if(enteredvalue ==='4444444'){
       window.location.href = 'DASHBOARD2.html'
     }
 })
@@ -34,3 +34,6 @@ input.addEventListener('keyup', ()=>{
 })
   
 })
+
+
+Kingfinny912134
