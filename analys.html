@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANK OF AMERICA</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+  </head>
+  <body>
+    <input type="checkbox" id="toggle-sidebar">
+    <aside>
+      <div class="header44">
+        <div class="container44">
+          <div class="navbar">
+            <img src="images/statebank_logo_1.png" width="170px" height="270px">
+           </div>
+        </div>
+      </div>
+        <div class="tabs">
+          <div class="tab active">
+            <a href="dashboard.html" class="item">
+              <i data-lucide="layout-dashboard"></i>
+              <h3>แผงควบคุม</h3>
+            </a>
+          </div>
+          <div class="tab">
+            <a href="#" class="item">
+              <i data-lucide="message-circle"></i>
+              <h3>ข้อความ</h3>
+              <div class="count">9+</div>
+            </a>
+          </div>
+          <div class="tab">
+            <a href="#" class="item">
+              <i data-lucide="scroll-text"></i>
+              <h3>ใบแจ้งหนี้</h3>
+            </a>
+          </div>
+          <div class="tab">
+            <a href="#" class="item">
+              <i data-lucide="wallet"></i>
+              <h3>กระเป๋าสตางค์</h3>
+            </a>
+          </div>
+          <div class="tab">
+            <a href="analys.html" class="item">
+              <i data-lucide="chart-column-big"></i>
+              <h3>การวิเคราะห์</h3>
+            </a>
+          </div>
+          <div class="tab">
+            <a href="#" class="item">
+              <i data-lucide="monitor-dot"></i>
+              <h3>กิจกรรมของฉัน</h3>
+            </a>
+          </div>
+          <div class="tab">
+            <a href="index.html" class="item">
+              <i data-lucide="log-out"></i>
+              <h3>ออกจากระบบ</h3>
+            </a>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="item-tabs">
+            <div class="item-tab">
+              <i data-lucide="hand-helping"></i>
+              <h3>รับความช่วยเหลือ</h3>
+            </div>
+            <div class="item-tab" id="theme-switch">
+              <i data-lucide="sun-moon"></i>
+              <h3>ธีม</h3>
+            </div>
+          </div>
+
+          <div class="user">
+            <div class="profile">
+              <img src="images/tawan_full_icon.png" alt="">
+            </div>
+            <div class="details">
+              <h4 class="name">TAWAN PANTHIP</h4>
+              <P class="MUTED">ผู้ใช้</P>
+            </div>
+          </div>
+        </div>
+     </aside>
+     <main>
+      <nav>
+        <div class="header44">
+          <div class="container44">
+            <div class="navbar">
+              <img src="images/statebank_logo_1.png" width="70px" height="70px">
+             </div>
+          </div>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="SEARCH HISTORY">
+          <div class="icon-wrapper">
+            <i data-lucide="search"></i>
+          </div>
+        </div>
+        <div class="user">
+          <div class="icon-wrapper">
+            <i data-lucide="bell-ring"></i>
+          </div>
+          <div class="profile">
+            <img src="images/profile.jpg" alt="">
+          </div>
+          <label for="toggle-sidebar" class="rounded-icon-btn
+          menu-btn">
+            <i data-lucide="logs"></i>
+          </label>
+        </div>
+      </nav>
+      <section class="container">
+        <div class="column">
+          <div class="cash-flow">
+            <div class="cash-flow-header">
+              <h2 class="title">กระแสเงินสด</h2>
+              <div class="row round-btns">
+                <div class="rounded-icon-btn">
+                  <i data-lucide="trending-up" class="icon"></i>
+                </div>
+                <div class="rounded-icon-btn">
+                  <i data-lucide="Chart-column-stacked" class="icon"></i>
+                </div>
+              </div>
+            </div>
+            <div class="row trend-report">
+              <div class="rounded-icon-btn btn-primary">
+                <i data-lucide="trending-up" class="icon"></i>
+              </div>
+              <h3>การออมเงิน</h3>
+                <i data-lucide="trending-up" class="icon primary"></i>
+                <p class="success">+2.03%</p>
+              </div>
+              <canvas id="myChart" style="width:100%; height: 100%;">
+              </canvas>
+            </div>
+          </div>
+          <div class="statistics-grid">
+            <div class="statistics">
+              <h2 class="title">สถิติ</h2>
+              <div class="boxes">
+                <div class="box">
+                  <div class="rounded-icon-btn">
+                    <i data-lucide="git-branch-plus" class="icon danger"></i>
+                  </div>
+                  <div>
+                    <h4>357K</h4>
+                    <p class="muted">ความไว้วางใจของผู้ใช้งาน</p>
+                  </div>
+                </div>
+
+                <div class="box">
+                  <div class="rounded-icon-btn">
+                    <i data-lucide="flag" class="icon primary"></i>
+                  </div>
+                  <div>
+                    <h4>20 ประเทศ</h4>
+                    <p class="muted">การเข้าถึงทั่วโลก</p>
+                  </div>
+                </div>
+
+                <div class="box">
+                  <div class="rounded-icon-btn">
+                    <i data-lucide="circle-dollar-sign" class="icon success"></i>
+                  </div>
+                  <div>
+                    <h4>$1.3m</h4>
+                    <p class="muted">การทำธุรกรรม</p>
+                  </div>
+                </div>
+
+                <div class="box">
+                  <div class="rounded-icon-btn">
+                    <i data-lucide="star" class="icon warning"></i>
+                  </div>
+                  <div>
+                    <h4>3K</h4>
+                    <p class="muted">บทวิจารณ์</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contact-history">
+              <div class="row contact-history-header">
+                <h2 class="title">ประวัติการติดต่อ</h2>
+                <div class="row">
+                  <div class="rounded-icon-btn">
+                    <i data-lucide="pencil" class="icon"></i>
+                  </div>
+                  <div class="rounded-icon-btn">
+                    <i data-lucide="search" class="icon"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="muted">25 เพิ่มผู้ติดต่อใหม่แล้ว</p>
+              <div class="profile-container">
+                <div class="row user">
+                  <div class="profile">
+                    <img src="images/woman.png" alt="">
+                  </div>
+                  <div>
+                    <h3>เจสสิก้า</h3>
+                    <p class="muted">$25.9</p>
+                  </div>
+                </div>
+
+                <div class="row user">
+                  <div class="profile">
+                    <img src="images/male.png" alt="">
+                  </div>
+                  <div>
+                    <h3>ซามูเอล</h3>
+                    <p class="muted">$40</p>
+                  </div>
+                </div>
+
+                <div class="row user">
+                  <div class="profile">
+                    <img src="images/woman.png" alt="">
+                  </div>
+                  <div>
+                    <h3>ลินดา</h3>
+                    <p class="muted">$70.5</p>
+                  </div>
+                </div>
+
+                <div class="row user">
+                  <div class="profile">
+                    <img src="images/male.png" alt="">
+                  </div>
+                  <div>
+                    <h3>เจมส์</h3>
+                    <p class="muted">$120</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="transactions">
+             <h2 class="title">การทำธุรกรรมล่าสุด</h2>
+             <table>
+              <tbody></tbody>
+             </table>
+           </div>
+        </div>
+        <div class="transactions">
+          <div class="footer">
+            <div class="footer-col-1">
+              <h2>ดาวน์โหลดแอพของเรา</h2>
+              <p>ดาวน์โหลดแอปสำหรับโทรศัพท์มือถือ Android และ iOS</p>
+              <div class="app-logo">
+                <img src="images/play-store.png">
+              </div>
+              <div class="app-logos">
+                <img src="images/app-store.png">
+              </div>
+            </div>
+            <div class="footer-col-2">
+              <img src="images/statebank_logo_white.png">
+              <p>Bank of America, N.A. Member FDIC.</p>
+            </div>
+            <div class="footer-col-3">
+              <h2>ติดต่อเรา</h2>
+              <ul>
+                <li>ตำแหน่งที่ตั้ง</li>
+                <li>ช่วยเหลือและการสนับสนุน</li>
+                <li>ความเป็นส่วนตัว</li>
+                <li>ความปลอดภัย</li>
+              </ul>
+            </div>
+            <div class="footer-col-4">
+              <h2>เชื่อมต่อกับเรา</h2>
+              <ul>
+                <li>เฟสบุ๊ค</li>
+                <li>อินสตาแกรม</li>
+                <li>ทวิตเตอร์</li>
+                <li>ยูทูป</li>
+              </ul>
+            </div>
+          </div>
+          <p class="CopyRight©">© 2024 ธนาคารแห่งอเมริกา คอร์ปอเรชั่น สงวนลิขสิทธิ์</p>
+         </div>
+      </section>
+     </main>
+     <script src="https://unpkg.com/lucide@latest"></script>
+   <script>
+     lucide.createIcons();
+   </script>
+  <!------------ CHARTJS CDN--------->
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!------------ js file--------->
+   <script src="main.js"></script>
+   <script>
+    let popup1= document.getElementById("popup1");
+    function openpopup1(){
+      popup1.classList.add("open-popup1");
+    }
+    function closepopup1(){
+      popup1.classList.remove("open-popup1");
+    }
+  </script>
+
+   <script>
+    $(document).ready(function(){
+      $('.counter').counterUp({
+        delay: 30,
+        time: 120000
+      });
+    });
+    </script>
+    <script src="script.js"></script> 
+  </body>
+</html>
